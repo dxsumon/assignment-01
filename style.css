@@ -285,12 +285,13 @@
 .offer-img:hover {
     transform: scale(1.5);
     cursor: pointer;
-    border: 10px solid rgb(255, 255, 255);
     border-radius: 100%;
 }
 
 .offer-img {
     width: 366px;
+    padding-bottom: 20px;
+    padding-right: 20px;
 }
 
 /* section-Two */
@@ -382,6 +383,9 @@ footer {
 
 .footer-copy-rights h4,
 button {
+
+
+
     color: #FFF;
     font-size: 24px;
     line-height: 40px;
