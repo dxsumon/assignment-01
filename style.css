@@ -7,7 +7,6 @@
 
 /* first-section */
 
-
 .container {
     width: 82.5%;
     max-width: 1320px;
@@ -27,11 +26,12 @@
 }
 
 .bg-img {
-    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('resources/Banner\ Image.png');
+    background-image: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('./resources/Banner\ Image.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 50px;
+    cursor: pointer;
 }
 
 .banner-text {
@@ -70,6 +70,7 @@
 
 .container-2 img {
     padding-bottom: 110px;
+    cursor: pointer;
 }
 
 /* Third-section */
@@ -80,11 +81,12 @@
 }
 
 .container-3 {
-    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('resources/Vectorrr.png');
+    background-image: linear-gradient(90deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%), url('./resources/Vectorrr.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .container .text-title h1 {
@@ -107,7 +109,12 @@
     color: #FFF;
     font-size: 20px;
     border: none;
-    background: none
+    background: none;
+    transition: all 500ms ease-in-out;
+}
+
+.container .text-title button:hover {
+    transform: scale(1.5);
 }
 
 .third-bg-img img {
@@ -144,6 +151,12 @@
     border: none;
     padding: 15px 30px;
     font-size: 20px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+
+.container-4-text button:hover {
+    transform: scale(1.2);
 }
 
 /* Section-Five */
@@ -165,7 +178,6 @@
 }
 
 .container-5-img {
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,6 +187,7 @@
     border-radius: 50%;
     padding: 15px;
     border: 15px solid #FF0000;
+    cursor: pointer;
 }
 
 .container-5-text2 img {
@@ -201,6 +214,62 @@
     padding-bottom: 15px;
 }
 
+/* Bonus-Mark Section */
+
+.bonus-mark {
+    text-align: center;
+    margin-top: 110px;
+    margin-bottom: 60px;
+}
+
+.bonus-mark h4 {
+    color: #070211;
+    font-size: 24px;
+}
+
+.bonus-mark h1 {
+    color: #070211;
+    font-size: 72px;
+    font-weight: 900;
+    padding-bottom: 25px;
+}
+
+#title {
+    color: #F00;
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.bonus-mark-2 {
+    margin-top: 60px;
+}
+
+.bonus-img1 {
+    position: absolute;
+    transform: translate(1%, 33%);
+    z-index: 1;
+    width: 40%;
+}
+
+.bonus-img2 {
+    z-index: 1;
+    left: 50%;
+    position: relative;
+    transform: translate(-15%, -10%);
+}
+
+.bonus-img3 {
+    position: relative;
+    left: 33%;
+    transform: translate(2px, 4px);
+}
+
+.bonus-img4 {
+    position: relative;
+    transform: translate(0px, -5px px);
+    width: 100%;
+}
+
 /* Main-Section Start here */
 
 /* Section-One */
@@ -210,12 +279,18 @@
 
 .offer {
     padding-top: 40px;
+    transition: all 500ms ease-in-out;
+}
+
+.offer-img:hover {
+    transform: scale(1.5);
+    cursor: pointer;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 100%;
 }
 
 .offer-img {
-    width: 365px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    width: 366px;
 }
 
 /* section-Two */
@@ -233,6 +308,7 @@
 
 .subscribe-bar img {
     padding-bottom: 35px;
+    cursor: pointer;
 }
 
 .subscribe-bar form {
@@ -248,17 +324,18 @@
     padding: 15px 50px;
     position: relative;
     left: 17%;
+    cursor: pointer;
 }
 
 #input {
     color: rgba(7, 2, 17, 0.30);
     font-size: 18px;
     border: none;
-    padding: 15px 50px;
-    border-radius: 50px 0px 0px 50px;
+    padding: 24px 50px;
+    border-radius: 50px 50px 50px 50px;
     position: absolute;
-    right: 42%;
-    width: 400px;
+    right: 29%;
+    width: 560px;
 }
 
 /* Footer-Start Here */
@@ -292,7 +369,7 @@ footer {
     padding: 45px 0 45px 0;
 }
 
-.social-link>img {
+.social-link>a>img {
     padding-right: 20px;
 }
 
@@ -303,8 +380,15 @@ footer {
     padding: 50px 0 120px 0;
 }
 
-.footer-copy-rights h4 {
+.footer-copy-rights h4,
+button {
     color: #FFF;
     font-size: 24px;
     line-height: 40px;
+}
+
+.footer-copy-rights button {
+    cursor: pointer;
+    border: none;
+    background: none;
 }
